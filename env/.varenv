@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+#UTF-8 encoding
+export PYTHONIOENCONDING="utf-8"
+
+#terminal
+export GPG_TTY=$(tty)

@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+#bin
+export PATH=$HOME/.local/bin:$PATH
+
+#npm
+export PATH=~/.npm-global/bin:$PATH
+
+#golang
+export PATH=$PATH:/usr/bin/go/bin:$HOME/go/bin
+export GOPATH="$HOME/Workspaces/golab"
+export PATH="$PATH:$GOPATH/bin"
+
+#php tooling
+export PATH=$PATH:$HOME/.config/composer/vendor/bin
+
+#python language server
+export PATH=$PATH:$HOME/.local/bin/pyls
+
+#garden
+export PATH=$PATH:$HOME/.garden/bin
+
+#pulumi
+export PATH=$PATH:$HOME/.pulumi/bin
+
+#microk8S
+export  KUBECONFIG=$HOME/.kube/config
+
+#garden
+export PATH=$PATH:$HOME/.garden/bin

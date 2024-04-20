@@ -1,0 +1,81 @@
+#!/usr/bin/env bash
+
+# distro specific  - Debian / Ubuntu and friends #
+# install with apt-get
+alias apt="sudo apt"
+alias apty="sudo apt --yes"
+
+# update & on one command
+alias update='sudo apt update && sudo apt upgrade'
+alias install='sudo apt install'
+alias instally='sudo apt --yes install'
+
+alias mkdir='mkdir -pv'
+alias hst='history'
+alias jbs='jobs -l'
+
+# Short ping cycle
+alias sping='ping -c 5'
+# Fast ping cycle
+alias fping='ping -c 10 -s.2'
+
+# Whose ports is it?
+alias ports='netstat -tulanp'
+alias portn='netstat -ntlp'
+
+# Web server headers #
+alias chead='curl -I'
+# find out if remote server supports gzip / mod_deflate or not #
+alias cheadc='curl -I --compress'
+
+# Make grep more user friendly by highlighting matches
+alias grep='grep --color=auto'
+
+# Prevent changing perms and ownershit on root/parent folder#
+alias prchown='chown --preserve-root'
+alias prchmod='chmod --preserve-root'
+
+# Become root #
+alias root='sudo -i'
+
+# Reboot / halt / poweroff
+alias reboot='sudo /sbin/reboot'
+alias poweroff='sudo /sbin/poweroff'
+alias halt='sudo /sbin/halt'
+alias shutdown='sudo /sbin/shutdown'
+
+# run minikube with kvm virt system
+alias minikvm='minikube start --vm-driver kvm2'
+
+# Quay.io
+alias quay='docker login quay.io'
+
+# Python Cmds
+alias python='python3'
+alias pip='pip3'
+
+#git config commands
+alias gitmail='git config user.email'
+alias gitname='git config user.email'
+alias galias='git config --list | grep alias'
+
+#python commands for python 3.x
+alias python="python3"
+alias pip="pip3"
+
+#microk8S basic commands
+alias mctl='microk8s kubectl'
+alias mk8s='microk8s'
+
+#exa enhacement te on ll, ls, tree
+alias ls="exa"
+alias ll="exa -lah"
+alias tree="exa --tree"
+
+#bat enhancement on cat
+if command -v bat > /dev/null; then 
+    lias cat="bat"
+elif command -v batcat > /dev/null; then
+    alias cat="batcat"
+
+fi
