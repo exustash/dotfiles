@@ -99,3 +99,15 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# load dotfiles
+
+if [ -f $HOME/env/.paths ]; then
+    . $HOME/env/.paths
+fi
+if [ -f $HOME/env/.varenv ]; then
+    . $HOME/env/.varenv
+fi
+if [ -f $HOME/term/.aliases ]; then
+    . $HOME/term/.aliases
+fi
