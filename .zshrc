@@ -101,7 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # load dotfiles
-
 if [ -f $HOME/env/.paths ]; then
     . $HOME/env/.paths
 fi
@@ -111,3 +110,6 @@ fi
 if [ -f $HOME/term/.aliases ]; then
     . $HOME/term/.aliases
 fi
+
+#load oh-my-posh quick-term theme
+eval "$(oh-my-posh init zsh --config $HOME/term/quick-term.omp.json)"
