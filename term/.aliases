@@ -67,10 +67,10 @@ alias pip="pip3"
 alias mctl='microk8s kubectl'
 alias mk8s='microk8s'
 
-#exa enhacement te on ll, ls, tree
-alias ls="exa"
-alias ll="exa -lah"
-alias tree="exa --tree"
+#eza enhacement te on ll, ls, tree
+alias ls="eza"
+alias ll="eza -lah"
+alias tree="eza --tree"
 
 #bat enhancement on cat
 if command -v bat > /dev/null; then 
