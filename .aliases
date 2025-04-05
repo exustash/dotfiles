@@ -74,7 +74,7 @@ alias tree="eza --tree"
 
 #bat enhancement on cat
 if command -v bat > /dev/null; then 
-    lias cat="bat"
+    alias cat="bat"
 elif command -v batcat > /dev/null; then
     alias cat="batcat"
 

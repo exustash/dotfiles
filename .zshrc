@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -101,15 +101,15 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # load dotfiles
-if [ -f $HOME/env/.paths ]; then
-    . $HOME/env/.paths
+if [ -f $HOME/.paths ]; then
+    . $HOME/.paths
 fi
-if [ -f $HOME/env/.varenv ]; then
-    . $HOME/env/.varenv
+if [ -f $HOME/.varenv ]; then
+    . $HOME/.varenv
 fi
-if [ -f $HOME/term/.aliases ]; then
-    . $HOME/term/.aliases
+if [ -f $HOME/.aliases ]; then
+    . $HOME/.aliases
 fi
 
 #load oh-my-posh quick-term theme
-eval "$(oh-my-posh init zsh --config $HOME/term/quick-term.omp.json)"
+eval "$(oh-my-posh init zsh --config $HOME/quick-term.omp.json)"
